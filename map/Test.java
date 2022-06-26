@@ -1,13 +1,24 @@
 package map;
 
+/**
+ * Tests for map questions
+ * @author binqibang
+ */
 public class Test {
     public static void main(String[] args) {
+        // Test FindReplacePattern
         String[] words = new String[] {"abc","deq","mee","aqq","dkd","ccc"};
         String pattern = "abb";
         FindReplacePattern sol = new FindReplacePattern();
         var res = sol.findAndReplacePattern(words, pattern);
         for(String word : res) {
             System.out.println(word);
+        }
+
+        // Test RandomPickWithBlacklist
+        RandomPickWithBlacklist sol1 = new RandomPickWithBlacklist(10, new int[] {2,5});
+        for (int i = 0; i < 50; i++) {
+            System.out.printf("%d ", sol1.pick());
         }
     }
 }
