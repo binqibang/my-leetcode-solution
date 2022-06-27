@@ -23,20 +23,23 @@ public class RandomPickWithBlacklist {
         int blackLength = blacklist.length;
         // 对于后半部分，黑名单数标`1`，非黑标`0`
         int[] blackFlag = new int[blackLength];
-        // 后半部分白名单数的下标
         whiteLength = n - blacklist.length;
+        // 后半部分白名单数的下标
         List<Integer> whiteIdx = new ArrayList<>();
+        // 标记黑名单数
         for (int val : blacklist) {
             if (val >= whiteLength) {
                 blackFlag[val - whiteLength] = 1;
             }
         }
+        // 遍历获得后半部分白名单数下标
         for (int i = 0; i < blackLength; i++) {
             if (blackFlag[i] == 0) {
                 whiteIdx.add(i);
             }
         }
         int idx = 0;
+        // 映射
         for (int val : blacklist) {
             if (val < whiteLength) {
                 black2white.put(val, whiteLength + whiteIdx.get(idx++));

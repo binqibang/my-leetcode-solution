@@ -48,11 +48,10 @@ public class SortedCircularList {
     }
 
     public static void main(String[] args) {
-        Node init = null;
-        Node head = insert(init, 5);
+        Node head = insert(null, 5);
         head = insert(head,3);
         head = insert(head,3);
         head = insert(head, 0);
-
+        System.out.println(head.val);
     }
 }
