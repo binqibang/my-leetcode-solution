@@ -33,7 +33,7 @@ public class MaxNestingDepthOfParentheses {
      * 用`size`变量模拟栈，省去了出栈入栈的时间以及空间 <br>
      * Time: O(n); Space: O(1)
      */
-    public int maxDepth2(String s) {
+    public int maxDepth1(String s) {
         int ans = 0, size = 0;
         for (char ch : s.toCharArray()) {
             if (ch == '(') {

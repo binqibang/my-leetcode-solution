@@ -1,4 +1,4 @@
-package deque;
+package qeque;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
@@ -22,7 +22,7 @@ public class SimplifyPath {
                 deque.push(dir);
             }
         }
-        StringBuffer res = new StringBuffer();
+        StringBuilder res = new StringBuilder();
         if (deque.isEmpty()){
             res.append('/');
         } else {

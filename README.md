@@ -18,5 +18,6 @@ Leetcode: @binqibang
 | 2022/6/29 | 535    | Encode and Decode TinyURL                | HashMap        | [LeetCode #535](https://leetcode.cn/problems/encode-and-decode-tinyurl/)                 | Medium     | ✔️      |
 | 2022/6/30 | 1175   | Prime Arrangements                       | Combinatorics  | [LeetCode # 1175](https://leetcode.cn/problems/prime-arrangements/)                      | Easy       | ✔️      |
 | 2022/7/1  | 1614   | Maximum Nesting Depth of the Parentheses | Stack          | [LeetCode #1614](https://leetcode.cn/problems/maximum-nesting-depth-of-the-parentheses/) | Easy       | ✔️      |
+| 2022/7/2  | 871    | Minimum Number of Refueling Stops        | Heap, DP       | [LeetCode #871](https://leetcode.cn/problems/minimum-number-of-refueling-stops/)         | Hard       | ❌       |
 
 
