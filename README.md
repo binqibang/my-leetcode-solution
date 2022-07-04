@@ -20,5 +20,4 @@ Leetcode: @binqibang
 | 2022/7/1  | 1614   | Maximum Nesting Depth of the Parentheses | Stack            | [LeetCode #1614](https://leetcode.cn/problems/maximum-nesting-depth-of-the-parentheses/) | Easy       | ✔️      |
 | 2022/7/2  | 871    | Minimum Number of Refueling Stops        | Heap, DP         | [LeetCode #871](https://leetcode.cn/problems/minimum-number-of-refueling-stops/)         | Hard       | ❌       |
 | 2022/7/3  | 31     | Next Permutation                         | Next Permutation | [LeetCode #31](https://leetcode.cn/problems/next-permutation/)                           | Medium     | ❌       |
-
-
+| 2022/7/4  | 1200   | Minimum Absolute Difference              | Sort             | [LeetCode #1200](https://leetcode.cn/problems/minimum-absolute-difference/)              | Easy       | ✔️      |
