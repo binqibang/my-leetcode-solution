@@ -5,7 +5,8 @@ import java.util.List;
 
 /**
  * Question: LeetCode #729 (Medium)
- * Solution1: time O(n^2); space O(n)
+ * 用 list 存放日程，当安排新日程时遍历所有日程对比 <br>
+ * Time: O(n^2); Space: O(n)
  * @author binqibang
  * @date 2022/6/6
  */
