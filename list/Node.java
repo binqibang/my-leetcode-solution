@@ -2,7 +2,7 @@ package list;
 
 
 /**
- * Node class for list
+ * Node definition for Sorted Circular List
  * @author binqibang
  */
 public class Node {

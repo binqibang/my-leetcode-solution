@@ -23,3 +23,4 @@ Leetcode: @binqibang
 | 2022/7/4  | 1200   | Minimum Absolute Difference              | Sort             | [LeetCode #1200](https://leetcode.cn/problems/minimum-absolute-difference/)              | Easy       | ✔️      |
 | 2022/7/5  | 729    | My Calendar I                            | TreeMap          | [LeetCode #729](https://leetcode.cn/problems/my-calendar-i/)                             | Medium     | ❌       |
 | 2022/7/5  | 657    | Robot Return to Origin                   | Simulation       | [LeetCode #657](https://leetcode.cn/problems/robot-return-to-origin/)                    | Easy       | ✔️      |
+| 2022/7/6  | 206    | Reverse Linked List                      | Linked List      | [LeetCode #206](https://leetcode.cn/problems/reverse-linked-list/)                       | Easy       | ✔️      |
