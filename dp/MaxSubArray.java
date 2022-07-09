@@ -20,7 +20,6 @@ public class MaxSubArray {
         return res;
     }
 
-    /** TestCalendar */
     public static void main(String[] args) {
         // input a non-length-limited array
         Scanner in = new Scanner(System.in);
