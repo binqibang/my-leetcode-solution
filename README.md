@@ -28,3 +28,4 @@ Leetcode: @binqibang
 | 2022/7/9  | 873    | Length of Longest Fibonacci Subsequence  | DP               | [LeetCode #873](https://leetcode.cn/problems/length-of-longest-fibonacci-subsequence/)   | Medium     | ❌       |
 | 2022/7/10 | 474    | Ones and Zeros                           | Knapsack Problem | [LeetCode #474](https://leetcode.cn/problems/ones-and-zeroes/)                           | Medium     | ❌       |
 | 2022/7/11 | 676    | Implement Magic Dictionary               | Trie, Set        | [LeetCode #676](https://leetcode.cn/problems/implement-magic-dictionary/)                | Medium     | ✔️      |
+| 2022/7/12 | 1252   | Cells with Odd Values in a Matrix        | Math             | [LeetCode #1252](https://leetcode.cn/problems/cells-with-odd-values-in-a-matrix/)        | Easy       | ✔️      |
