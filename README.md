@@ -29,3 +29,4 @@ Leetcode: @binqibang
 | 2022/7/10 | 474    | Ones and Zeros                           | Knapsack Problem | [LeetCode #474](https://leetcode.cn/problems/ones-and-zeroes/)                           | Medium     | ❌       |
 | 2022/7/11 | 676    | Implement Magic Dictionary               | Trie, Set        | [LeetCode #676](https://leetcode.cn/problems/implement-magic-dictionary/)                | Medium     | ✔️      |
 | 2022/7/12 | 1252   | Cells with Odd Values in a Matrix        | Math             | [LeetCode #1252](https://leetcode.cn/problems/cells-with-odd-values-in-a-matrix/)        | Easy       | ✔️      |
+| 2022/7/13 | 735    | Asteroid Collision                       | Stack            | [LeetCode #735](https://leetcode.cn/problems/asteroid-collision/)                        | Medium     | ❌       |
