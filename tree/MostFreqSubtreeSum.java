@@ -1,4 +1,4 @@
-package bt;
+package tree;
 
 import java.util.*;
 
@@ -17,7 +17,7 @@ public class MostFreqSubtreeSum {
      * @param root
      * @return sum of its left and right subtree
      */
-    public int dfs(TreeNode root) {
+    public int dfs(BTNode root) {
         if (root == null) {
             return 0;
         }
@@ -27,7 +27,7 @@ public class MostFreqSubtreeSum {
         return sum;
     }
 
-    public int[] findFrequentTreeSum(TreeNode root) {
+    public int[] findFrequentTreeSum(BTNode root) {
         dfs(root);
         List<Integer> tmp = new ArrayList<>();
         for(var key : count.keySet()) {

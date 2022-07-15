@@ -1,4 +1,4 @@
-package bt;
+package tree;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,17 +17,17 @@ public class BinaryTreePaths {
      * @param root
      * @return all root-to-leaf paths in any order
      */
-    public List<String> binaryTreePaths1(TreeNode root) {
+    public List<String> binaryTreePaths1(BTNode root) {
         List<String> res = new ArrayList<>();
         if (root == null) {
             return res;
         }
-        Stack<TreeNode> stack = new Stack<>();
+        Stack<BTNode> stack = new Stack<>();
         Stack<String> path = new Stack<>();
         stack.push(root);
         path.push(root.val + "");
         while (!stack.isEmpty()) {
-            TreeNode curr = stack.pop();
+            BTNode curr = stack.pop();
             String currPath = path.pop();
             if (curr.left == null && curr.right == null) {
                 res.add(currPath);
@@ -51,13 +51,13 @@ public class BinaryTreePaths {
      * @param root
      * @return
      */
-    public List<String> binaryTreePaths2(TreeNode root) {
+    public List<String> binaryTreePaths2(BTNode root) {
         paths = new ArrayList<>();
         dfs(root, "");
         return paths;
     }
 
-    public void dfs(TreeNode root, String path) {
+    public void dfs(BTNode root, String path) {
         // 递归出口
         if (root == null) {
             return;

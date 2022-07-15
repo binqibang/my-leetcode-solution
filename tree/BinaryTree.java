@@ -1,4 +1,4 @@
-package bt;
+package tree;
 
 import java.util.ArrayDeque;
 import java.util.Queue;
@@ -11,11 +11,11 @@ public class BinaryTree {
         return NULL_VALUE;
     }
 
-    public TreeNode createBinaryTree(int[] values, int idx) {
+    public BTNode createBinaryTree(int[] values, int idx) {
         if (values[idx] == NULL_VALUE) {
             return null;
         }
-        var root = new TreeNode(values[idx]);
+        var root = new BTNode(values[idx]);
         int leftIdx = 2 * idx + 1;
         int rightIdx = 2 * idx + 2;
         if (leftIdx < values.length) {
@@ -31,7 +31,7 @@ public class BinaryTree {
         return root;
     }
 
-    public void preorderTraversal(TreeNode root) {
+    public void preorderTraversal(BTNode root) {
         if (root == null) {
             return;
         }
@@ -40,7 +40,7 @@ public class BinaryTree {
         preorderTraversal(root.right);
     }
 
-    public void postorderTraversal(TreeNode root) {
+    public void postorderTraversal(BTNode root) {
         if (root == null) {
             return;
         }
@@ -49,7 +49,7 @@ public class BinaryTree {
         System.out.printf("%d ", root.val);
     }
 
-    public void inorderTraversal(TreeNode root) {
+    public void inorderTraversal(BTNode root) {
         if (root == null) {
             return;
         }
@@ -58,8 +58,8 @@ public class BinaryTree {
         inorderTraversal(root.right);
     }
 
-    public void levelTraversal(TreeNode root) {
-        Queue<TreeNode> queue = new ArrayDeque<>();
+    public void levelTraversal(BTNode root) {
+        Queue<BTNode> queue = new ArrayDeque<>();
         queue.offer(root);
         while (!queue.isEmpty()) {
             int n = queue.size();
@@ -77,11 +77,11 @@ public class BinaryTree {
         }
     }
 
-    public void printBinaryTree(TreeNode root) {
+    public void printBinaryTree(BTNode root) {
         print("", root, false);
     }
 
-    private void print(String prefix, TreeNode root, boolean isLeft) {
+    private void print(String prefix, BTNode root, boolean isLeft) {
         if (root != null) {
             System.out.println (prefix + (isLeft ? "|-- " : "\\-- ") + root.val);
             print(prefix + (isLeft ? "|   " : "    "), root.left, true);

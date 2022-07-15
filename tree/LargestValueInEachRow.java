@@ -1,4 +1,4 @@
-package bt;
+package tree;
 
 import java.util.*;
 
@@ -14,12 +14,12 @@ public class LargestValueInEachRow {
      * @param root
      * @return
      */
-    public List<Integer> largestValues(TreeNode root) {
+    public List<Integer> largestValues(BTNode root) {
         List<Integer> res = new ArrayList<>();
         if (root == null) {
             return res;
         }
-        Queue<TreeNode> queue = new ArrayDeque<>();
+        Queue<BTNode> queue = new ArrayDeque<>();
         queue.offer(root);
         while (!queue.isEmpty()) {
             int max = Integer.MIN_VALUE;

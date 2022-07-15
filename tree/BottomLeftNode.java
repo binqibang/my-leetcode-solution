@@ -1,4 +1,4 @@
-package bt;
+package tree;
 
 import java.util.ArrayDeque;
 import java.util.Queue;
@@ -19,12 +19,12 @@ public class BottomLeftNode {
      * @param root
      * @return the leftmost value in the last row of the tree
      */
-    public int findBottomLeftValue1(TreeNode root) {
+    public int findBottomLeftValue1(BTNode root) {
         dfs(root, 0);
         return ans;
     }
 
-    public void dfs(TreeNode root, int depth) {
+    public void dfs(BTNode root, int depth) {
         if (root == null) {
             return;
         }
@@ -46,12 +46,12 @@ public class BottomLeftNode {
      * @param root
      * @return the leftmost value in the last row of the tree
      */
-    public int findBottomLeftValue2(TreeNode root) {
+    public int findBottomLeftValue2(BTNode root) {
         int res = 0;
-        Queue<TreeNode> queue = new ArrayDeque<>();
+        Queue<BTNode> queue = new ArrayDeque<>();
         queue.offer(root);
         while (!queue.isEmpty()) {
-            TreeNode curr = queue.poll();
+            BTNode curr = queue.poll();
             if (curr.right != null) {
                 queue.offer(curr.right);
             }
