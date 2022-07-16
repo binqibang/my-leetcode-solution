@@ -1,6 +1,4 @@
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Random;
+import java.util.*;
 
 public class Demo {
 
@@ -29,5 +27,10 @@ public class Demo {
         System.out.println(++i);
         System.out.println(i);
 
+        Queue<Integer> queue = new LinkedList<>();
+        queue.offer(1);
+        queue.offer(2);
+        queue.offer(3);
+        queue.poll();
     }
 }
