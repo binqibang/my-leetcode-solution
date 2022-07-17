@@ -31,3 +31,4 @@ Leetcode: @binqibang
 | 2022/7/12 | 1252   | Cells with Odd Values in a Matrix                        | Math             | [LeetCode #1252](https://leetcode.cn/problems/cells-with-odd-values-in-a-matrix/)                       | Easy       | ✔️      |
 | 2022/7/13 | 735    | Asteroid Collision                                       | Stack            | [LeetCode #735](https://leetcode.cn/problems/asteroid-collision/)                                       | Medium     | ❌       |
 | 2022/7/15 | 558    | Logical OR of Two Binary Grids Represented as Quad-Trees | QuadTree         | [LeetCode #558](https://leetcode.cn/problems/logical-or-of-two-binary-grids-represented-as-quad-trees/) | Medium     | ❌       |
+| 2022/7/17 | 565    | Array Nesting                                            | Graph            | [LeetCode #565](https://leetcode.cn/problems/array-nesting/)                                            | Medium     | ❌       |
