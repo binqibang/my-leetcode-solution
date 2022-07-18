@@ -1,4 +1,4 @@
-package bst;
+package tree.bt;
 
 /**
  * Question: LeetCode #450 (Medium)
@@ -6,8 +6,8 @@ package bst;
  * @date 2022/6/2
  */
 public class DeleteNodeInBST {
-    public static TreeNode deleteNode(TreeNode root, int key) {
-        // empty bst
+    public static BTNode deleteNode(BTNode root, int key) {
+        // empty tree.bst
         if (root == null) {
             return null;
         }
@@ -40,7 +40,7 @@ public class DeleteNodeInBST {
             }
             // if both left and right subtree is not empty, then find the max node of its
             // left subtree to replace
-            TreeNode successor = root.left;
+            BTNode successor = root.left;
             while (successor.right != null) {
                 successor = successor.right;
             }
@@ -51,17 +51,17 @@ public class DeleteNodeInBST {
     }
 
     public static void main(String[] args) {
-        TreeNode root = new TreeNode(5);
-        TreeNode node1 = new TreeNode(3);
-        TreeNode node2 = new TreeNode(6);
-        TreeNode node3 = new TreeNode(2);
-        TreeNode node4 = new TreeNode(4);
-        TreeNode node5 = new TreeNode(7);
+        BTNode root = new BTNode(5);
+        BTNode node1 = new BTNode(3);
+        BTNode node2 = new BTNode(6);
+        BTNode node3 = new BTNode(2);
+        BTNode node4 = new BTNode(4);
+        BTNode node5 = new BTNode(7);
         root.left = node1;
         root.right = node2;
         node1.left = node3;
         node1.right = node4;
         node2.right = node5;
-        TreeNode newRoot = deleteNode(root, 3);
+        BTNode newRoot = deleteNode(root, 3);
     }
 }

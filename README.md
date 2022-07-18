@@ -32,3 +32,4 @@ Leetcode: @binqibang
 | 2022/7/13 | 735    | Asteroid Collision                                       | Stack            | [LeetCode #735](https://leetcode.cn/problems/asteroid-collision/)                                       | Medium     | ❌       |
 | 2022/7/15 | 558    | Logical OR of Two Binary Grids Represented as Quad-Trees | QuadTree         | [LeetCode #558](https://leetcode.cn/problems/logical-or-of-two-binary-grids-represented-as-quad-trees/) | Medium     | ❌       |
 | 2022/7/17 | 565    | Array Nesting                                            | Graph            | [LeetCode #565](https://leetcode.cn/problems/array-nesting/)                                            | Medium     | ❌       |
+| 2022/7/18 | 108    | Convert Sorted Array to BST                              | BST              | [LeetCode #108](https://leetcode.cn/problems/convert-sorted-array-to-binary-search-tree/)               | Easy       | ✔️      |

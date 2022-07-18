@@ -1,4 +1,4 @@
-package tree;
+package tree.bt;
 
 import java.util.*;
 
@@ -11,8 +11,6 @@ public class LargestValueInEachRow {
     /**
      * 层次遍历对于每层的特殊处理都可以套用如下模板<br>
      * Time: O(n); Space: O(n)
-     * @param root
-     * @return
      */
     public List<Integer> largestValues(BTNode root) {
         List<Integer> res = new ArrayList<>();

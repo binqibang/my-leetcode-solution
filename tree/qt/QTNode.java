@@ -1,4 +1,4 @@
-package tree;
+package tree.qt;
 
 /**
  * Definition for a QuadTree node.

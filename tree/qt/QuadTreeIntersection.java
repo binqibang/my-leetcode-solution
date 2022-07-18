@@ -1,4 +1,4 @@
-package tree;
+package tree.qt;
 
 /**
  * LeetCode #558 (Medium)
