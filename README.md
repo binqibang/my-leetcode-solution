@@ -2,8 +2,8 @@
 
 My LeetCode solutions (java version). 
 
-- All questions and solutions are categorized into different java packages.
+All questions and solutions are categorized into different java packages.
 
-- Leetcode: @binqibang
+Leetcode: @binqibang
 
-- Schedule: 
+Progress: [My LeetCode Progress](https://github.com/binqibang/my-leetcode-solution/blob/main/Progress.md)
