@@ -29,3 +29,4 @@
 | 2022/7/18 | 108    | Convert Sorted Array to BST                              | BST              | [LeetCode #108](https://leetcode.cn/problems/convert-sorted-array-to-binary-search-tree/)               | Easy       | ✔️      |
 | 202/7/20  | 1260   | Shift 2D Grid                                            | Simulation       | [LeetCode #1260](https://leetcode.cn/problems/shift-2d-grid/)                                           | Easy       | ✔️      |
 | 2022/7/21 | 814    | Binary Tree Pruning                                      | BT               | [LeetCode #814](https://leetcode.cn/problems/binary-tree-pruning/)                                      | Medium     | ✔️      |
+| 2022/7/22 | 634    | Maximum Average Subarray I                               | Sliding Window   | [LeetCode #634](https://leetcode.cn/problems/maximum-average-subarray-i/)                               | Easy       | ✔️      |
