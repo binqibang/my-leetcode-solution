@@ -2,6 +2,7 @@ package tree;
 
 import tree.bt.BinaryTree;
 import tree.bt.BinaryTreePruning;
+import tree.bt.CBTInserter;
 import tree.bt.LargestValueInEachRow;
 
 public class TestTree {
@@ -26,5 +27,14 @@ public class TestTree {
         BinaryTreePruning sol1 = new BinaryTreePruning();
         var res = sol1.pruneTree(test);
         bt.printBinaryTree(res);
+
+        // Test CBTInserter
+        int[] values2 = new int[] {1, 2, 3, 4, 5, 6};
+        var test1 = bt.createBinaryTree(values2, 0);
+        CBTInserter inserter = new CBTInserter(test1);
+        for (int i = 7; i < 15; i++) {
+            inserter.insert(i);
+        }
+        bt.printBinaryTree(inserter.getRoot());
     }
 }
