@@ -33,3 +33,4 @@
 | 2022/7/23 | 1437   | Check If All 1's Are at Least Length K Places Away       | Double Pointer   | [LeetCode #1437](https://leetcode.cn/problems/check-if-all-1s-are-at-least-length-k-places-away/)       | Easy       | ✔️      |
 | 2022/7/24 | 1184   | Distance Between Bus Stops                               | Simulation       | [LeetCode #1184](https://leetcode.cn/problems/distance-between-bus-stops/)                              | Easy       | ✔️      |
 | 2022/7/25 | 919    | Complete Binary Tree Inserter                            | BinaryTree       | [LeetCode #919](https://leetcode.cn/problems/complete-binary-tree-inserter/)                            | Medium     | ❌       |
+| 2022/7/26 | 1845   | Seat Reservation Manager                                 | Heap             | [LeetCode #1845](https://leetcode.cn/problems/seat-reservation-manager/)                                | Medium     | ✔️      |
