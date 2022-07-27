@@ -7,5 +7,10 @@ public class Test {
         int k = 5;
         var ans = solution.shiftGrid(test, k);
         System.out.println(ans.toString());
+
+        // Test Fraction Addition and Subtraction
+        FractionOperation solution1 = new FractionOperation();
+        var exp = "1/2+1/5-8/5";
+        System.out.println(solution1.fractionAddition(exp));
     }
 }
