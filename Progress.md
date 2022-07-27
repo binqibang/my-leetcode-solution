@@ -34,3 +34,4 @@
 | 2022/7/24 | 1184   | Distance Between Bus Stops                               | Simulation       | [LeetCode #1184](https://leetcode.cn/problems/distance-between-bus-stops/)                              | Easy       | ✔️      |
 | 2022/7/25 | 919    | Complete Binary Tree Inserter                            | BinaryTree       | [LeetCode #919](https://leetcode.cn/problems/complete-binary-tree-inserter/)                            | Medium     | ❌       |
 | 2022/7/26 | 1845   | Seat Reservation Manager                                 | Heap             | [LeetCode #1845](https://leetcode.cn/problems/seat-reservation-manager/)                                | Medium     | ✔️      |
+| 2022/7/27 | 591    | Fraction Addition and Subtraction                        | Simulation       | [LeetCode #591](https://leetcode.cn/problems/fraction-addition-and-subtraction/)                        | Medium     | ❌       |
