@@ -35,3 +35,4 @@
 | 2022/7/25 | 919    | Complete Binary Tree Inserter                            | BinaryTree       | [LeetCode #919](https://leetcode.cn/problems/complete-binary-tree-inserter/)                            | Medium     | ❌       |
 | 2022/7/26 | 1845   | Seat Reservation Manager                                 | Heap             | [LeetCode #1845](https://leetcode.cn/problems/seat-reservation-manager/)                                | Medium     | ✔️      |
 | 2022/7/27 | 592    | Fraction Addition and Subtraction                        | Simulation       | [LeetCode #592](https://leetcode.cn/problems/fraction-addition-and-subtraction/)                        | Medium     | ❌       |
+| 2022/7/28 | 1331   | Rank Transform of an Array                               | Sort, HashMap    | [LeetCode #1331](https://leetcode.cn/problems/rank-transform-of-an-array/)                              | Easy       | ✔️      |
