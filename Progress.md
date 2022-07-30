@@ -37,3 +37,4 @@
 | 2022/7/27 | 592    | Fraction Addition and Subtraction                        | Simulation       | [LeetCode #592](https://leetcode.cn/problems/fraction-addition-and-subtraction/)                        | Medium     | ❌       |
 | 2022/7/28 | 1331   | Rank Transform of an Array                               | Sort, HashMap    | [LeetCode #1331](https://leetcode.cn/problems/rank-transform-of-an-array/)                              | Easy       | ✔️      |
 | 2022/7/29 | 593    | Valid Square                                             | Math             | [LeetCode #593](https://leetcode.cn/problems/valid-square/)                                             | Medium     | ✔️      |
+| 2022/7/30 | 821    | Shortest Distance to a Character                         | String           | [LeetCode #821](https://leetcode.cn/problems/shortest-distance-to-a-character/)                         | Easy       | ❌       |
