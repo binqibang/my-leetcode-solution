@@ -1,9 +1,6 @@
 package tree;
 
-import tree.bt.BinaryTree;
-import tree.bt.BinaryTreePruning;
-import tree.bt.CBTInserter;
-import tree.bt.LargestValueInEachRow;
+import tree.bt.*;
 
 public class TestTree {
     public static void main(String[] args) {
@@ -36,5 +33,11 @@ public class TestTree {
             inserter.insert(i);
         }
         bt.printBinaryTree(inserter.getRoot());
+
+        // Test MaxLevelSum
+        int[] values3 = new int[] {1, 7, 0, 7, -8, NULL, NULL};
+        var test2 = bt.createBinaryTree(values3, 0);
+        MaxLevelSum sol2 = new MaxLevelSum();
+        System.out.println(sol2.maxLevelSum(test2));
     }
 }
