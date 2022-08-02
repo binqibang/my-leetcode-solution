@@ -1,4 +1,4 @@
-package qeque;
+package queue;
 
 /**
  * LeetCode #622 (Medium)
