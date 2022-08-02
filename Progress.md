@@ -39,3 +39,4 @@
 | 2022/7/29 | 593    | Valid Square                                             | Math             | [LeetCode #593](https://leetcode.cn/problems/valid-square/)                                             | Medium     | ✔️      |
 | 2022/7/30 | 821    | Shortest Distance to a Character                         | String           | [LeetCode #821](https://leetcode.cn/problems/shortest-distance-to-a-character/)                         | Easy       | ❌       |
 | 2022/7/31 | 1161   | Max Level Sum of a Binary Tree                           | BinaryTree       | [LeetCode #1161](https://leetcode.cn/problems/maximum-level-sum-of-a-binary-tree/)                      | Medium     | ✔️      |
+| 2022/8/2  | 622    | Design Circular Queue                                    | Queue            | [LeetCode #622](https://leetcode.cn/problems/design-circular-queue/)                                    | Medium     | ✔️      |
