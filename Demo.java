@@ -11,7 +11,7 @@ public class Demo {
         }
         long startTime = System.nanoTime();
         for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
-            continue;
+
         }
         long endTime = System.nanoTime();
         System.out.println((endTime - startTime) / 1e9 );
