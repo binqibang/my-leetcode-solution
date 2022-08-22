@@ -63,5 +63,21 @@ public class TestTree {
         bt.printBinaryTree(test3);
         DeepestLeavesSum sol4 = new DeepestLeavesSum();
         System.out.println(", sum is " + sol4.deepestLeavesSum(test3));
+        System.out.println("-".repeat(50));
+
+        // Test PrintTree
+        System.out.println("Test PrintTree");
+        PrintTree sol5 = new PrintTree();
+        var matrix = sol5.printTree(test3);
+        for (var row : matrix) {
+            for (var node : row) {
+                if (node.equals("")) {
+                    System.out.print("  ");
+                } else {
+                    System.out.print(node + " ");
+                }
+            }
+            System.out.println();
+        }
     }
 }
