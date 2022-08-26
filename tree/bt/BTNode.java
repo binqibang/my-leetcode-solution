@@ -18,4 +18,15 @@ public class BTNode {
         this.right = right;
     }
 
+    public int getVal() {
+        return val;
+    }
+
+    public BTNode getLeft() {
+        return left;
+    }
+
+    public BTNode getRight() {
+        return right;
+    }
 }

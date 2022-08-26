@@ -79,5 +79,16 @@ public class TestTree {
             }
             System.out.println();
         }
+        System.out.println("-".repeat(50));
+
+        // Test LowestCommonAncestor
+        System.out.println("Test LowestCommonAncestor");
+        LowestCommonAncestor sol6 = new LowestCommonAncestor();
+        BTNode p = test3.getLeft().getRight();
+        BTNode q = test3.getLeft().getLeft().getLeft();
+        System.out.println(sol6.lowestCommonAncestor1(test3, p, q).getVal());
+
+        LowestCommonAncestorII sol7 = new LowestCommonAncestorII();
+        System.out.println(sol7.lowestCommonAncestor(test3, p, new BTNode(0)));
     }
 }
