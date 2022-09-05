@@ -90,5 +90,11 @@ public class TestTree {
 
         LowestCommonAncestorII sol7 = new LowestCommonAncestorII();
         System.out.println(sol7.lowestCommonAncestor(test3, p, new BTNode(0)));
+
+        // Test Codec
+        Codec codec = new Codec();
+        var str = codec.serialize(test3);
+        System.out.println(str);
+        bt.printBinaryTree(codec.deserialize(str));
     }
 }

@@ -1,7 +1,5 @@
 package dp;
 
-import java.util.Scanner;
-
 /**
  * QUESTION: Given an integer array nums, find the contiguous subarray (containing at least one number)
  *           which has the largest sum and return its sum.
@@ -10,6 +8,9 @@ import java.util.Scanner;
  */
 
 public class MaxSubArray {
+    /**
+     * 优化后的动态规划
+     */
     public static int maxSubArray(int[] nums) {
         int pre = 0;
         int res = nums[0];
@@ -20,17 +21,27 @@ public class MaxSubArray {
         return res;
     }
 
-    public static void main(String[] args) {
-        // input a non-length-limited array
-        Scanner in = new Scanner(System.in);
-        String str = in.nextLine();
-        String[] array = str.split(" ");
-        int[] test = new int[array.length];
-        for (int i = 0; i < array.length; i++) {
-            test[i] = Integer.parseInt(array[i]);
+    /**
+     * 标准动态规划算法，dp[n]表示前 n+1 个元素最大子序列和 <br>
+     * dp[0] = nums[0] <br>
+     * dp[i] = dp[i-1]+nums[i] if select nums[i] <br>
+     * dp[i] = nums[i] if not select nums[i]
+     */
+    public static int maxSubarray1(int[] nums) {
+        int n = nums.length;
+        int[] dp = new int[n];
+        dp[0] = nums[0];
+        int max = dp[0];
+        for (int i = 1; i < n; i++) {
+            dp[i] = Math.max(nums[i], dp[i-1] + nums[i]);
+            max = Math.max(max, dp[i]);
         }
+        return max;
+    }
 
-        System.out.println(maxSubArray(test));
+    public static void main(String[] args) {
+        int[] nums = new int[] {-2,1,-3,4,-1,2,1,-5,4};
+        System.out.println(maxSubarray1(nums));
     }
 }
 
