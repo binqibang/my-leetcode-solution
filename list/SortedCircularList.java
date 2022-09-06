@@ -9,12 +9,9 @@ public class SortedCircularList {
     /**
      * 分类讨论，插入值在`head`前或后<br>
      * 特殊情况：空结点；单结点；所有元素同一值
-     * @param head
-     * @param insertVal
-     * @return
      */
-    public static Node insert(Node head, int insertVal) {
-        Node node = new Node(insertVal);
+    public static ListNode insert(ListNode head, int insertVal) {
+        ListNode node = new ListNode(insertVal);
         if (head == null) {
             node.next = node;
             return node;
@@ -24,7 +21,7 @@ public class SortedCircularList {
             node.next = head;
             return head;
         }
-        Node idx = head;
+        ListNode idx = head;
         if (head.val <= insertVal) {
             // 找到合适位置或最大值结点
             // idx.next != head 条件防止在全是同一值的结点发生无限循环
@@ -48,7 +45,7 @@ public class SortedCircularList {
     }
 
     public static void main(String[] args) {
-        Node head = insert(null, 5);
+        ListNode head = insert(null, 5);
         head = insert(head,3);
         head = insert(head,3);
         head = insert(head, 0);
