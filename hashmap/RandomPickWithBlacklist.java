@@ -1,4 +1,4 @@
-package map;
+package hashmap;
 
 import java.util.*;
 
@@ -8,7 +8,7 @@ import java.util.*;
  * @date 2022/6/26
  */
 public class RandomPickWithBlacklist {
-    private final Map<Integer,Integer> black2white = new HashMap<>();;
+    private final Map<Integer,Integer> black2white = new HashMap<>();
     private final Random random = new Random();
     private int whiteLength;
 
