@@ -90,11 +90,21 @@ public class TestTree {
 
         LowestCommonAncestorII sol7 = new LowestCommonAncestorII();
         System.out.println(sol7.lowestCommonAncestor(test3, p, new BTNode(0)));
+        System.out.println("-".repeat(50));
 
         // Test Codec
         Codec codec = new Codec();
         var str = codec.serialize(test3);
         System.out.println(str);
         bt.printBinaryTree(codec.deserialize(str));
+        System.out.println("-".repeat(50));
+
+        // Test ZigzagLevelOrder
+        int[] values5 = new int[] {1,2,3,4,NULL,NULL,5};
+        var test4 = bt.createBinaryTree(values5, 0);
+        bt.printBinaryTree(test4);
+        ZigzagLevelOrder sol8 = new ZigzagLevelOrder();
+        var res8 = sol8.zigzagLevelOrder(test4);
+        System.out.println(res8);
     }
 }
