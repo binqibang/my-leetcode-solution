@@ -1,7 +1,7 @@
 package tree.bt;
 
 /**
- * Question: LeetCode #450 (Medium)
+ * Question: LeetCode #450 (Medium); CodeTop MS
  * @author binqibang
  * @date 2022/6/2
  */
@@ -40,12 +40,18 @@ public class DeleteNodeInBST {
             }
             // if both left and right subtree is not empty, then find the max node of its
             // left subtree to replace
-            BTNode successor = root.left;
+            BTNode pre = root, successor = root.left;
             while (successor.right != null) {
+                pre = successor;
                 successor = successor.right;
             }
-            successor.right = root.right;
-            return root.left;
+            root.val = successor.val;
+            // delete successor
+            if (pre.right.val == successor.val) {
+                pre.right = successor.left;
+            } else {
+                pre.left = successor.left;
+            }
         }
         return root;
     }
