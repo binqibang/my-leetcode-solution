@@ -15,7 +15,7 @@ public class MinimumInRotatedSortedArray {
      */
     public int findMin(int[] nums){
         for (int i = 0; i < nums.length - 1; i++) {
-            if(nums[i] > nums[i+1]){
+            if (nums[i] > nums[i+1]){
                 return nums[i+1];
             }
         }
@@ -26,10 +26,10 @@ public class MinimumInRotatedSortedArray {
     public int findMin_1(int[] nums){
         int low = 0;
         int high = nums.length - 1;
-        int pivot = 0;
+        int pivot;
         while (low < high){
             pivot = low + (high - low) / 2;
-            if(nums[pivot] < nums[high]){
+            if (nums[pivot] < nums[high]){
                 high = pivot;
             } else {
                 low = pivot + 1;
