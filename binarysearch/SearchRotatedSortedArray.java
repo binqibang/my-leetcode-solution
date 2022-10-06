@@ -16,14 +16,14 @@ public class SearchRotatedSortedArray {
             }
             // When the array is split in the `mid`, half of it is always in order,
             // then we binary search in the ordered part.
-            if (nums[0] <= nums[mid]) { // nums[left] ~ nums[mid] are partially ordered
-                if (nums[0] <= target && target < nums[mid]){
+            if (nums[left] <= nums[mid]) { // nums[left] ~ nums[mid] are partially ordered
+                if (nums[left] <= target && target < nums[mid]){
                     right = mid - 1;
                 } else {
                     left = mid + 1;
                 }
             } else {
-                if (nums[mid] < target && target <= nums[nums.length - 1]){ // nums[mid] ~ nums[right] are partially ordered
+                if (nums[mid] < target && target <= nums[right]){ // nums[mid] ~ nums[right] are partially ordered
                     left = mid + 1;
                 } else {
                     right = mid - 1;
