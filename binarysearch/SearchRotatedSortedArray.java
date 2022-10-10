@@ -22,8 +22,8 @@ public class SearchRotatedSortedArray {
                 } else {
                     left = mid + 1;
                 }
-            } else {
-                if (nums[mid] < target && target <= nums[right]){ // nums[mid] ~ nums[right] are partially ordered
+            } else { // nums[mid] ~ nums[right] are partially ordered
+                if (nums[mid] < target && target <= nums[right]){
                     left = mid + 1;
                 } else {
                     right = mid - 1;
