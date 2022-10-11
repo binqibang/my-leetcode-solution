@@ -2,6 +2,7 @@ package tree.bt;
 
 import java.util.ArrayDeque;
 import java.util.Queue;
+import java.util.Stack;
 
 public class BinaryTree {
 
@@ -56,6 +57,20 @@ public class BinaryTree {
         inorderTraversal(root.left);
         System.out.printf("%d ", root.val);
         inorderTraversal(root.right);
+    }
+
+    public void inorderTraversal1(BTNode root) {
+        Stack<BTNode> stack = new Stack<>();
+        BTNode iter = root;
+        while (!stack.isEmpty() || iter != null) {
+            while (iter != null) {
+                stack.push(iter);
+                iter = iter.left;
+            }
+            iter = stack.pop();
+            System.out.printf("%d ", iter.val);
+            iter = iter.right;
+        }
     }
 
     public void levelTraversal(BTNode root) {
