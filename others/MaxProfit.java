@@ -1,3 +1,5 @@
+package others;
+
 /**
  * LeetCode #121 (Easy); CodeTop MS
  * @author binqibang
