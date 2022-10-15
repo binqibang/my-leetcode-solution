@@ -36,6 +36,10 @@ public class IsValidBST {
         return isValidBST(root.right);
     }
 
+    /**
+     * Non-recursive inorder traversal <br>
+     * Time: O(n); Space: O(n)
+     */
     public boolean isValidBST1(BTNode root) {
         Stack<BTNode> stack = new Stack<>();
         BTNode node = root;
