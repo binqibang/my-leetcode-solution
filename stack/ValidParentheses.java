@@ -11,7 +11,7 @@ import java.util.Stack;
  */
 public class ValidParentheses {
     /**
-     *
+     * Time: O(n); Space: O(n)
      * @param s a string s containing just the characters '(', ')', '{', '}', '[' and ']'
      * @return determine if the input string is valid
      */
