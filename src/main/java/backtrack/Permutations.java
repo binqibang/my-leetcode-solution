@@ -10,20 +10,20 @@ import java.util.List;
  */
 public class Permutations {
     private List<List<Integer>> ans;
+    boolean[] used; // if nums[i] is used
 
     public List<List<Integer>> permute(int[] nums) {
         ans = new ArrayList<>();
-        // if nums[i] is used
-        boolean[] used = new boolean[nums.length];
+        used = new boolean[nums.length];
         // current permutation
         List<Integer> perm = new ArrayList<>();
         // depth of recursion
         int depth = 0;
-        backtrack(perm, used, depth, nums);
+        backtrack(perm, depth, nums);
         return ans;
     }
 
-    private void backtrack(List<Integer> perm, boolean[] used, int depth, int[] nums) {
+    private void backtrack(List<Integer> perm, int depth, int[] nums) {
         if (depth == nums.length) {
             ans.add(new ArrayList<>(perm));
             return;
@@ -32,7 +32,7 @@ public class Permutations {
             if (!used[i]) {
                 perm.add(nums[i]);
                 used[i] = true;
-                backtrack(perm, used, depth + 1, nums);
+                backtrack(perm, depth + 1, nums);
                 // backtrack, revoke nums[i]
                 used[i] = false;
                 perm.remove(depth);
