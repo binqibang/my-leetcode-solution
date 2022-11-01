@@ -5,9 +5,9 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * LeetCode #46 (Medium); CodeTop MS
+ * LeetCode #47 (Medium); CodeTop MS
  * @author binqibang
- * @date 2022/10/27
+ * @date 2022/11/1
  */
 public class PermutationsII {
     List<List<Integer>> ans;
