@@ -1,12 +1,14 @@
 package binarysearch;
 
 /**
- * Question: LeetCode #857 (Medium)
- * 二分查找应用：结果在一个范围内且具有单调性
+ * LeetCode #857 (Medium)
  * @author binqibang
  * @date 2022/6/7
  */
 public class KokoEatingBananas {
+    /**
+     * 二分查找应用：结果在一个范围内且具有单调性
+     */
     public int minEatingSpeed(int[] piles, int h) {
         // 1 <= piles[i] <= 10^9, speed ~ int
         int left = 1;

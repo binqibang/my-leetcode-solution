@@ -1,17 +1,16 @@
 package binarysearch;
 /**
- * Find Minimum in Rotated Sorted Array (Medium)<br>
- * QUESTION: Suppose an array of length n sorted in ascending order is rotated between 1 and n
- * times. For example, the array nums = [0,1,2,4,5,6,7] might become:
- * [4,5,6,7,0,1,2] if it was rotated 4 times. [0,1,2,4,5,6,7] if it was rotated 7 times.
- * Given the sorted rotated array nums of unique elements, return the minimum element of this array.
- * @author    binqibang
- * @created   2021/04/08
+ * LeetCode #153 (Medium); CodeTop MS
+ * @author binqibang
+ * @date 2021/04/08
  */
 public class MinimumInRotatedSortedArray {
-    /** Traverse the array, when finding inverted sequence, which means finding
-     *  the rotated point, namely minimum. If given array is ordered, then return
-     *  first element.
+    /**
+     * @TimeComplexity O(n)
+     * @SpaceComplexity O(1)
+     * @param nums an array of length n with unique elements sorted in ascending order
+     *             is rotated, like [4,5,6,7,0,1,2] if it was rotated 4 times.
+     * @return the minimum element of this array.
      */
     public int findMin(int[] nums){
         for (int i = 0; i < nums.length - 1; i++) {
@@ -22,10 +21,12 @@ public class MinimumInRotatedSortedArray {
         return nums[0];
     }
 
-    /** Binary search variant*/
-    public int findMin_1(int[] nums){
-        int low = 0;
-        int high = nums.length - 1;
+    /**
+     * @TimeComplexity O(logn)
+     * @SpaceComplexity O(1)
+     */
+    public int findMin1(int[] nums){
+        int low = 0, high = nums.length - 1;
         int pivot;
         while (low < high){
             pivot = low + (high - low) / 2;
