@@ -4,6 +4,11 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ * LeetCode weekly-contest-315
+ * @author binqibang
+ * @date 2022/10/16
+ */
 public class Week315 {
     public int reverse(int num) {
         String digits = String.valueOf(num);
