@@ -12,6 +12,10 @@ public class BinaryTree {
         return NULL_VALUE;
     }
 
+    public BTNode createBT(int[] values) {
+        return createBinaryTree(values, 0);
+    }
+
     public BTNode createBinaryTree(int[] values, int idx) {
         if (values[idx] == NULL_VALUE) {
             return null;
