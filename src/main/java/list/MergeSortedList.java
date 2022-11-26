@@ -29,16 +29,4 @@ public class MergeSortedList {
         return head.next;
     }
 
-    public static void main(String[] args) {
-        ListNode a = new ListNode(1);
-        a.next = new ListNode(2);
-        a.next.next = new ListNode(4);
-
-        ListNode b = new ListNode(1);
-        b.next = new ListNode(3);
-        b.next.next = new ListNode(4);
-
-        var merged = mergeTwoLists(a, b);
-    }
-
 }

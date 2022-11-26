@@ -26,6 +26,7 @@ public class InsertionSortList {
                 curr.next = prev.next;
                 prev.next = curr;
             }
+            // 更新待插入结点
             curr = lastSorted.next;
         }
         return dummyHead.next;
