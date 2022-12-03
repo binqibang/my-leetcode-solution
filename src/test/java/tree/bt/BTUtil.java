@@ -1,7 +1,7 @@
 package tree.bt;
 
 class BTUtil {
-    static BinaryTree bt = new BinaryTree();
+    private static final BinaryTree bt = new BinaryTree();
     public static final int NULL = Integer.MAX_VALUE;
 
     public static BTNode createBT(int[] values) {
