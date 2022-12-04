@@ -31,4 +31,11 @@ class BinarySearchTest {
         int target = 0;
         System.out.println(bs.searchRange(nums, target, false));
     }
+
+    @Test
+    void searchRotated() {
+        int[] nums = new int[] {3, 1};
+        int target = 1;
+        System.out.println(bs.searchRotated(nums, target));
+    }
 }

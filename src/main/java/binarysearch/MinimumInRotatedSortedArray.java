@@ -26,16 +26,32 @@ public class MinimumInRotatedSortedArray {
      * @SpaceComplexity O(1)
      */
     public int findMin1(int[] nums){
-        int low = 0, high = nums.length - 1;
-        int pivot;
-        while (low < high){
-            pivot = low + (high - low) / 2;
-            if (nums[pivot] < nums[high]){
-                high = pivot;
+        int left = 0, right = nums.length - 1;
+        int mid;
+        while (left < right){
+            mid = left + (right - left) / 2;
+            if (nums[mid] < nums[right]){
+                right = mid;
             } else {
-                low = pivot + 1;
+                left = mid + 1;
             }
         }
-        return nums[low];
+        return nums[left];
+    }
+
+    public int findMin2(int[] nums) {
+        int left = 0, right = nums.length - 1;
+        int min = Integer.MAX_VALUE;
+        while (left <= right) {
+            int mid = left + (right - left) / 2;
+            if (nums[left] <= nums[mid]) {  // [left, mid) 递增，向右继续查找
+                min = Math.min(min, nums[left]);
+                left = mid + 1;
+            } else {                        // (mid, right] 递增，向左继续查找
+                min = Math.min(min, nums[mid]);
+                right = mid - 1;
+            }
+        }
+        return min;
     }
 }

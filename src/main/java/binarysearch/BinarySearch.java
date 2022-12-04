@@ -56,4 +56,38 @@ public class BinarySearch {
         return ans;
     }
 
+    /**
+     * LeetCode #33 搜索旋转排序数组（数组元素互不相同）
+     */
+    public int searchRotated(int[] nums, int target) {
+        int left = 0, right = nums.length - 1;
+        int ans = -1;
+        while (left <= right) {
+            int mid = left + (right - left) / 2;
+            if (nums[mid] == target) {
+                ans = mid;
+            }
+            // 注意这个等号，为避免只有两个元素的旋转数组，目标值在后一位，如 nums = [3, 1], target = 1
+            // 如果不加等号，则直接进入下一个分支令 right = mid - 1 错过答案
+            if (nums[left] <= nums[mid]) {   // [left, mid) 部分有序
+                if (nums[left] <= target && target < nums[mid]) {
+                    // target 在 [left, mid) 中，则在 [left, mid-1] 中继续搜索
+                    right = mid - 1;
+                } else {
+                    // 否则在 (mid, right] 中继续搜索
+                    left = mid + 1;
+                }
+            } else {                        // (mid, right] 部分有序
+                if (target > nums[mid] && target <= nums[right]) {
+                    // target 在 (mid, right] 中，则在 [mid+1, right] 中继续搜索
+                    left = mid + 1;
+                } else {
+                    // 否则在 [left, mid) 中继续搜索
+                    right = mid - 1;
+                }
+            }
+        }
+        return ans;
+    }
+
 }
