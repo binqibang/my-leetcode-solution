@@ -1,4 +1,4 @@
-package trie;
+package set;
 
 import java.util.Collections;
 import java.util.HashSet;
