@@ -11,21 +11,18 @@ import java.util.Queue;
  * @date 2022/9/5
  */
 public class CourseSchedule {
-    /** [n, *] 邻接表表示有向边 */
-    List<List<Integer>> edges;
-    /** 入度数组 */
-    int[] indegree;
 
     public boolean canFinish(int numCourses, int[][] prerequisites) {
-        edges = new ArrayList<>();
+        // [n, *] 邻接表表示有向边
+        List<List<Integer>> adj = new ArrayList<>();
+        // 入度数组
+        int[] indegree = new int[numCourses];
         for (int i = 0; i < numCourses; i++) {
-            edges.add(new ArrayList<>());
+            adj.add(new ArrayList<>());
         }
-        indegree = new int[numCourses];
-
         // 对于先修关系 [a,b]，增加一条 b->a 的边，且 a 入度加一
         for (int[] edge : prerequisites) {
-            edges.get(edge[1]).add(edge[0]);
+            adj.get(edge[1]).add(edge[0]);
             indegree[edge[0]]++;
         }
 
@@ -43,7 +40,7 @@ public class CourseSchedule {
             // 当前入度为 0 的顶点
             int u = queue.poll();
             // 去掉从 u 出发的所有有向边
-            for (int v : edges.get(u)) {
+            for (int v : adj.get(u)) {
                 indegree[v]--;
                 if (indegree[v] == 0) {
                     queue.offer(v);
