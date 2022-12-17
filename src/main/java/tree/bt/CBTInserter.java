@@ -5,8 +5,6 @@ import java.util.Queue;
 
 /**
  * LeetCode #919 (Medium)
- * <br>
- * Time: O(n); Space: O(n+q)
  * @author binqibang
  * @date 2022/7/25
  */

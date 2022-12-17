@@ -15,7 +15,7 @@ public class LowestCommonAncestor {
             return root;
         }
         BTNode left = lowestCommonAncestor(root.left, p, q);
-        BTNode right = lowestCommonAncestor1(root.right, p, q);
+        BTNode right = lowestCommonAncestor(root.right, p, q);
         // 左子树中未找到
         if (left == null) {
             return right;

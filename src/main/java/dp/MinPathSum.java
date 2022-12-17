@@ -9,7 +9,9 @@ import java.util.Stack;
  */
 public class MinPathSum {
     /**
-     * 二维动态规划，Time: O(mn); Space: O(1)
+     * 二维动态规划
+     * @TimeComplexity O(mn)
+     * @SpaceComplexity O(1)
      * @param grid m x n grid filled with non-negative numbers
      * @return a path from top left to bottom right, which minimizes
      *         the sum of all numbers along its path.
