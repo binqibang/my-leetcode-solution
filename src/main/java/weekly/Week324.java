@@ -3,6 +3,11 @@ package weekly;
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ * LeetCode Weekly-Contest-324
+ * @author binqibang
+ * @date 2022/12/24
+ */
 public class Week324 {
 
     public int similarPairs(String[] words) {

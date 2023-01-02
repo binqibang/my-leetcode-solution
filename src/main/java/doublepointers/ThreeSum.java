@@ -26,26 +26,26 @@ public class ThreeSum {
             if (i > 0 && nums[i] == nums[i-1]) {
                 continue;
             }
-            int l = i + 1, r = n - 1;
-            while (l < r) {
-                int sum = nums[i] + nums[l] + nums[r];
+            int j = i + 1, k = n - 1;
+            while (j < k) {
+                int sum = nums[i] + nums[j] + nums[k];
                 if (sum == 0) {
-                    ans.add(Arrays.asList(nums[i], nums[l], nums[r]));
+                    ans.add(Arrays.asList(nums[i], nums[j], nums[k]));
                     // avoid same left num
-                    while (l < r && nums[l] == nums[l+1]) {
-                        l++;
+                    while (j < k && nums[j] == nums[j+1]) {
+                        j++;
                     }
                     // avoid same right num
-                    while (l < r && nums[r] == nums[r-1]){
-                        r--;
+                    while (j < k && nums[k] == nums[k-1]){
+                        k--;
                     }
                     // find new answer
-                    l++;
-                    r--;
+                    j++;
+                    k--;
                 } else if (sum < 0) {
-                    l++;
+                    j++;
                 } else {
-                    r--;
+                    k--;
                 }
             }
         }

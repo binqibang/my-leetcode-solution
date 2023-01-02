@@ -1,5 +1,10 @@
 package weekly;
 
+/**
+ * LeetCode Weekly-Contest-325
+ * @author binqibang
+ * @date 2022/12/29
+ */
 public class Week325 {
 
     public int closetTarget(String[] words, String target, int startIndex) {
