@@ -1,5 +1,7 @@
 package dp;
 
+import java.util.Scanner;
+
 /**
  * LeetCode #221 (Medium); HOT 100
  * @author binqibang
@@ -25,5 +27,10 @@ public class MaximalSquare {
             }
         }
         return maxSide * maxSide;
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
     }
 }

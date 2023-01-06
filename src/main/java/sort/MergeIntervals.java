@@ -19,10 +19,10 @@ public class MergeIntervals {
         }
         Arrays.sort(intervals, Comparator.comparingInt(o -> o[0]));
         List<int[]> merged = new ArrayList<>();
-        for (int i = 0; i < intervals.length; i++) {
-            int l = intervals[i][0], r = intervals[i][1], n = merged.size();
-            if (n == 0 || l > merged.get(n- 1)[1]) {
-                merged.add(new int[] {l, r});
+        for (int[] interval : intervals) {
+            int l = interval[0], r = interval[1], n = merged.size();
+            if (n == 0 || l > merged.get(n - 1)[1]) {
+                merged.add(new int[]{l, r});
             } else {
                 merged.get(n - 1)[1] = Math.max(merged.get(n - 1)[1], r);
             }
