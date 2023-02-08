@@ -6,7 +6,7 @@ package string;
  * @date 2022/9/23
  */
 public class LongestPalindrome {
-    public static String longestPalindrome(String s) {
+    public String longestPalindrome(String s) {
         int n = s.length();
         if (n == 1) {
             return s;
@@ -42,10 +42,5 @@ public class LongestPalindrome {
             curLen = 1;
         }
         return s.substring(maxStart, maxStart + maxLen);
-    }
-
-    public static void main(String[] args) {
-        String s = "acdbbada";
-        System.out.println(longestPalindrome(s));
     }
 }
