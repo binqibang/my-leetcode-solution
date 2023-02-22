@@ -9,6 +9,6 @@ class SortListTest {
         SortList sl = new SortList();
         int[] values = new int[] {-1, 5, 3, 4, 0};
         var head = ListUtil.createList(values);
-        sl.sortList(head);
+        ListUtil.printList(sl.sortList(head));
     }
 }

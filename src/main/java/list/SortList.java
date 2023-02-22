@@ -1,12 +1,67 @@
 package list;
 
+import static list.MergeSortedList.mergeTwoLists;
+
 /**
  * LeetCode #148 (Medium); CodeTop MS
  * @author binqibang
  * @date 2022/11/25
  */
 public class SortList {
+
+    /**
+     * 自顶向下归并
+     * @TimeComplexity O(nlogn)
+     * @SpaceComplexity O(logn)
+     */
     public ListNode sortList(ListNode head) {
+        if (head == null || head.next == null) {
+            return head;
+        }
+        // 快慢指针寻找链表中间分界
+        ListNode slow = head, fast = head.next;
+        while (fast != null && fast.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+        // 后半段链表头节点
+        ListNode head1 = slow.next;
+        // 将原始链表从边界处分割开
+        slow.next = null;
+        ListNode list1 = sortList(head);
+        ListNode list2 = sortList(head1);
+        return merge(list1, list2);
+    }
+
+    private ListNode merge(ListNode list1, ListNode list2) {
+        if (list1 == null) {
+            return list2;
+        }
+        if (list2 == null) {
+            return list1;
+        }
+        ListNode dummy = new ListNode(), curr = dummy;
+        while (list1 != null && list2 != null) {
+            if (list1.val <= list2.val) {
+                curr.next = list1;
+                list1 = list1.next;
+            } else {
+                curr.next = list2;
+                list2 = list2.next;
+            }
+            curr = curr.next;
+        }
+        curr.next = list1 != null ? list1 : list2;
+        return dummy.next;
+    }
+
+
+    /**
+     * 自底向上归并
+     * @TimeComplexity O(nlogn)
+     * @SpaceComplexity O(1)
+     */
+    public ListNode sortList1(ListNode head) {
         // 统计链表长度
         int len = 0;
         ListNode iter = head;
@@ -43,7 +98,7 @@ public class SortList {
                     curr.next = null;
                 }
                 // 合并链表1、2
-                prev.next = MergeSortedList.mergeTwoLists(head1, head2);
+                prev.next = mergeTwoLists(head1, head2);
                 //  将 prev 移动到 subLen*2 的位置后去
                 while (prev.next != null) {
                     prev = prev.next;
@@ -53,4 +108,5 @@ public class SortList {
         }
         return head;
     }
+
 }
