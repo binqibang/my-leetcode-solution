@@ -54,7 +54,7 @@ public class IsValidBST {
                 return false;
             }
             pre = node.val;
-            root = node.right;
+            node = node.right;
         }
         return true;
     }

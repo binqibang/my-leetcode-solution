@@ -40,7 +40,7 @@ public class SortList {
         if (list2 == null) {
             return list1;
         }
-        ListNode dummy = new ListNode(), curr = dummy;
+        ListNode prev = new ListNode(), curr = prev;
         while (list1 != null && list2 != null) {
             if (list1.val <= list2.val) {
                 curr.next = list1;
@@ -52,7 +52,7 @@ public class SortList {
             curr = curr.next;
         }
         curr.next = list1 != null ? list1 : list2;
-        return dummy.next;
+        return prev.next;
     }
 
 
