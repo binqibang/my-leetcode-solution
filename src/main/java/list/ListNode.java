@@ -5,10 +5,12 @@ package list;
  * @author binqibang
  */
 public class ListNode {
-   int val;
+    int val;
     ListNode next;
     ListNode() {}
+
     public ListNode(int val) { this.val = val; }
+
     public ListNode(int val, ListNode next) { this.val = val; this.next = next; }
 
     public int getVal() {
@@ -21,5 +23,10 @@ public class ListNode {
 
     public ListNode getNext() {
         return next;
+    }
+
+    @Override
+    public String toString() {
+        return String.valueOf(val);
     }
 }

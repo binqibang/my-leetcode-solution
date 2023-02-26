@@ -34,10 +34,17 @@ public class RemoveNthFromEnd {
      * 解法二：快慢指针
      */
     public ListNode removeNthFromEnd1(ListNode head, int n) {
+        if (head == null || n <= 0) {
+            return head;
+        }
         ListNode dummy = new ListNode(-1, head);
         ListNode first = dummy;
         // 让｀first`指针先走`n`步
         for (int i = 0; i < n; i++) {
+            // `n`超过链表长度，直接返回
+            if (first.next == null) {
+                return head;
+            }
             first = first.next;
         }
         // `second`开始走
@@ -50,5 +57,29 @@ public class RemoveNthFromEnd {
         }
         second.next = second.next.next;
         return dummy.next;
+    }
+
+    /**
+     * 剑指offer #22，需要注意到非法参数
+     * @param head 链表头节点
+     * @param k 倒数第`k`个
+     * @return 链表倒数第`k`个节点
+     */
+    public ListNode kthFromEnd(ListNode head, int k) {
+        if (head == null || k <= 0) {
+            return null;
+        }
+        ListNode fast = head, slow = fast;
+        for (int i = 1; i < k; i++) {
+            if (fast.next == null) {
+                return null;
+            }
+            fast = fast.next;
+        }
+        while (fast.next != null) {
+            fast = fast.next;
+            slow = slow.next;
+        }
+        return slow;
     }
 }
