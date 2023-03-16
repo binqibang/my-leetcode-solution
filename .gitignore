@@ -3,3 +3,4 @@ target/
 leet_code.iml
 /src/main/java/Practice.java
 /src/test/java/PracticeTest.java
+/src/main/java/Test.java

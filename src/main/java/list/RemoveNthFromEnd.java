@@ -10,12 +10,18 @@ public class RemoveNthFromEnd {
      * 解法一：计算链表长度
      */
     public ListNode removeNthFromEnd(ListNode head, int n) {
+        if (head == null || n <= 0) {
+            return head;
+        }
         // 获得链表长度
         int length = 0;
         ListNode iter = head;
         while (iter != null) {
             length++;
             iter = iter.next;
+        }
+        if (n > length) {
+            return head;
         }
         // 哑节点指向链表头，删除节点时更方便
         ListNode dummy = new ListNode(-1, head);

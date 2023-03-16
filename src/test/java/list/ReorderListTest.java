@@ -13,5 +13,7 @@ class ReorderListTest {
         var head2 = ListUtil.createList(nums1);
         rl.reorderList(head1);
         ListUtil.printList(head1);
+        rl.reorderList(head2);
+        ListUtil.printList(head2);
     }
 }
